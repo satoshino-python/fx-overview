@@ -14,95 +14,123 @@
     .lv{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:13px}
     .lv b{font-weight:700}.chips{display:flex;flex-wrap:wrap;gap:4px;margin-top:2px}
     .c{font-size:11.5px;padding:0 6px;border-radius:4px}.c.y{background:var(--okbg);color:var(--ok)}.c.n{background:var(--ngbg);color:var(--ng)}
-    .posl{font-size:12.5px;border-top:1px solid var(--rule);padding-top:6px}</style><div class="wrap">
+    .posl{font-size:12.5px;border-top:1px solid var(--rule);padding-top:6px}
+    .upd a{color:var(--acc)}
+    details.guide{background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:0 12px}
+    details.guide summary{cursor:pointer;padding:12px 0;font-weight:700;color:var(--acc)}
+    details.guide dl{margin:0 0 12px;display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:13px}
+    details.guide dt{font-weight:700;white-space:nowrap}details.guide dd{margin:0;color:var(--ink)}
+    details.guide h3{font-size:12.5px;letter-spacing:.1em;color:var(--sub);margin:8px 0 6px}</style><div class="wrap">
     <div><h1>レジサポブレイク 一覧</h1>
-    <div class="upd">更新 11/17 10:37（11/17 09時の足の終値まで）・ 毎時更新。開き直すと最新になります</div></div>
+    <div class="upd">更新 11/17 10:37（11/17 09時の足の終値まで）・ 毎時更新 ・ <a href="#guide" onclick="document.getElementById('guide').open=true">表示の見方 ↓</a></div></div>
     <div class="card">
       <div class="head"><span class="sym">USD/JPY</span><span class="px">159.435</span></div>
       <div class="meta">日足 上昇（200日線 158.757） ・ 強弱 USD 1位 / JPY 2位 ・ ATR 0.16948</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">159.597</span> ・ レジライン <span class="px">159.512</span>（反応3回）・ ブレイクまで 0.95 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c n">反対側から×</span><span class="c n">跨ぎ0回×</span><span class="c y">日足トレンド○</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span>ブレイク判定 <span class="px">159.427</span> ・ サポライン <span class="px">159.512</span>（反応3回）・ ブレイクまで 0.05 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">159.597</span> ・ レジライン <span class="px">159.512</span>（反応3回）・ ブレイクまで 0.95 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c n" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から×</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c y" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド○</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span>ブレイク判定 <span class="px">159.427</span> ・ サポライン <span class="px">159.512</span>（反応3回）・ ブレイクまで 0.05 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">EUR/USD</span><span class="px">1.09957</span></div>
       <div class="meta">日足 下降（200日線 1.15192） ・ 強弱 EUR 4位 / USD 1位 ・ ATR 0.00111</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">1.10752</span> ・ レジライン <span class="px">1.10696</span>（反応3回）・ ブレイクまで 7.13 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">1.10752</span> ・ レジライン <span class="px">1.10696</span>（反応3回）・ ブレイクまで 7.13 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">GBP/USD</span><span class="px">1.31845</span></div>
       <div class="meta">日足 下降（200日線 1.34101） ・ 強弱 GBP 3位 / USD 1位 ・ ATR 0.00137</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">1.32299</span> ・ レジライン <span class="px">1.32230</span>（反応2回）・ ブレイクまで 3.31 ATR<div class="chips"><span class="c n">反応3回以上×</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">1.32299</span> ・ レジライン <span class="px">1.32230</span>（反応2回）・ ブレイクまで 3.31 ATR<div class="chips"><span class="c n" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上×</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">AUD/USD</span><span class="px">0.67359</span></div>
       <div class="meta">日足 もみ合い（200日線 0.70517） ・ 強弱 AUD 7位 / USD 1位 ・ ATR 0.00090</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">0.68194</span> ・ レジライン <span class="px">0.68149</span>（反応2回）・ ブレイクまで 9.26 ATR<div class="chips"><span class="c n">反応3回以上×</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">0.68194</span> ・ レジライン <span class="px">0.68149</span>（反応2回）・ ブレイクまで 9.26 ATR<div class="chips"><span class="c n" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上×</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">NZD/USD</span><span class="px">0.55011</span></div>
       <div class="meta">日足 下降（200日線 0.58072） ・ 強弱 NZD 5位 / USD 1位 ・ ATR 0.00067</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">0.55479</span> ・ レジライン <span class="px">0.55445</span>（反応2回）・ ブレイクまで 6.97 ATR<div class="chips"><span class="c n">反応3回以上×</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">0.55479</span> ・ レジライン <span class="px">0.55445</span>（反応2回）・ ブレイクまで 6.97 ATR<div class="chips"><span class="c n" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上×</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">USD/CHF</span><span class="px">0.84040</span></div>
       <div class="meta">日足 上昇（200日線 0.80224） ・ 強弱 USD 1位 / CHF 6位 ・ ATR 0.00097</div>
-      <div class="lv"><b>レジスタンス</b><span class="meta">対象のレジラインなし</span><b>サポート</b><span>ブレイク判定 <span class="px">0.83569</span> ・ サポライン <span class="px">0.83617</span>（反応3回）・ ブレイクまで 4.87 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span></div>
+      <div class="lv"><b>レジスタンス</b><span class="meta">対象のレジラインなし</span><b>サポート</b><span>ブレイク判定 <span class="px">0.83569</span> ・ サポライン <span class="px">0.83617</span>（反応3回）・ ブレイクまで 4.87 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">EUR/GBP</span><span class="px">0.83400</span></div>
       <div class="meta">日足 下降（200日線 0.85897） ・ 強弱 EUR 4位 / GBP 3位 ・ ATR 0.00049</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">0.83515</span> ・ レジライン <span class="px">0.83490</span>（反応6回）・ ブレイクまで 2.32 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">0.83515</span> ・ レジライン <span class="px">0.83490</span>（反応6回）・ ブレイクまで 2.32 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">AUD/NZD</span><span class="px">1.22445</span></div>
       <div class="meta">日足 上昇（200日線 1.21459） ・ 強弱 AUD 7位 / NZD 5位 ・ ATR 0.00125</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">1.22546</span> ・ レジライン <span class="px">1.22483</span>（反応3回）・ ブレイクまで 0.80 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c n">反対側から×</span><span class="c n">跨ぎ0回×</span><span class="c y">日足トレンド○</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span>ブレイク判定 <span class="px">1.22421</span> ・ サポライン <span class="px">1.22483</span>（反応3回）・ ブレイクまで 0.20 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">1.22546</span> ・ レジライン <span class="px">1.22483</span>（反応3回）・ ブレイクまで 0.80 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c n" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から×</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c y" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド○</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span>ブレイク判定 <span class="px">1.22421</span> ・ サポライン <span class="px">1.22483</span>（反応3回）・ ブレイクまで 0.20 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">EUR/AUD</span><span class="px">1.63243</span></div>
       <div class="meta">日足 下降（200日線 1.63360） ・ 強弱 EUR 4位 / AUD 7位 ・ ATR 0.00178</div>
-      <div class="lv"><b>レジスタンス</b><span class="meta">対象のレジラインなし</span><b>サポート</b><span>ブレイク判定 <span class="px">1.62843</span> ・ サポライン <span class="px">1.62932</span>（反応4回）・ ブレイクまで 2.25 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c y">日足トレンド○</span><span class="c n">通貨強弱×</span></div></span></div>
+      <div class="lv"><b>レジスタンス</b><span class="meta">対象のレジラインなし</span><b>サポート</b><span>ブレイク判定 <span class="px">1.62843</span> ・ サポライン <span class="px">1.62932</span>（反応4回）・ ブレイクまで 2.25 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c y" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド○</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">GBP/AUD</span><span class="px">1.95736</span></div>
       <div class="meta">日足 もみ合い（200日線 1.90191） ・ 強弱 GBP 3位 / AUD 7位 ・ ATR 0.00220</div>
-      <div class="lv"><b>レジスタンス</b><span class="meta">対象のレジラインなし</span><b>サポート</b><span>ブレイク判定 <span class="px">1.95096</span> ・ サポライン <span class="px">1.95206</span>（反応2回）・ ブレイクまで 2.91 ATR<div class="chips"><span class="c n">反応3回以上×</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span></div>
+      <div class="lv"><b>レジスタンス</b><span class="meta">対象のレジラインなし</span><b>サポート</b><span>ブレイク判定 <span class="px">1.95096</span> ・ サポライン <span class="px">1.95206</span>（反応2回）・ ブレイクまで 2.91 ATR<div class="chips"><span class="c n" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上×</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">EUR/JPY</span><span class="px">175.313</span></div>
       <div class="meta">日足 下降（200日線 182.861） ・ 強弱 EUR 4位 / JPY 2位 ・ ATR 0.19127</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">176.697</span> ・ レジライン <span class="px">176.601</span>（反応2回）・ ブレイクまで 7.24 ATR<div class="chips"><span class="c n">反応3回以上×</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">176.697</span> ・ レジライン <span class="px">176.601</span>（反応2回）・ ブレイクまで 7.24 ATR<div class="chips"><span class="c n" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上×</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">GBP/JPY</span><span class="px">210.207</span></div>
       <div class="meta">日足 下降（200日線 212.884） ・ 強弱 GBP 3位 / JPY 2位 ・ ATR 0.21993</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">211.575</span> ・ レジライン <span class="px">211.465</span>（反応3回）・ ブレイクまで 6.22 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">211.575</span> ・ レジライン <span class="px">211.465</span>（反応3回）・ ブレイクまで 6.22 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">AUD/JPY</span><span class="px">107.394</span></div>
       <div class="meta">日足 もみ合い（200日線 111.941） ・ 強弱 AUD 7位 / JPY 2位 ・ ATR 0.18240</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">108.836</span> ・ レジライン <span class="px">108.745</span>（反応3回）・ ブレイクまで 7.91 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">108.836</span> ・ レジライン <span class="px">108.745</span>（反応3回）・ ブレイクまで 7.91 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">NZD/JPY</span><span class="px">87.707</span></div>
       <div class="meta">日足 下降（200日線 92.177） ・ 強弱 NZD 5位 / JPY 2位 ・ ATR 0.12033</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">88.708</span> ・ レジライン <span class="px">88.648</span>（反応3回）・ ブレイクまで 8.32 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">88.708</span> ・ レジライン <span class="px">88.648</span>（反応3回）・ ブレイクまで 8.32 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">CHF/JPY</span><span class="px">189.714</span></div>
       <div class="meta">日足 下降（200日線 197.982） ・ 強弱 CHF 6位 / JPY 2位 ・ ATR 0.20078</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">191.170</span> ・ レジライン <span class="px">191.070</span>（反応2回）・ ブレイクまで 7.25 ATR<div class="chips"><span class="c n">反応3回以上×</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">191.170</span> ・ レジライン <span class="px">191.070</span>（反応2回）・ ブレイクまで 7.25 ATR<div class="chips"><span class="c n" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上×</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span class="meta">対象のサポラインなし</span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">EUR/CHF</span><span class="px">0.92409</span></div>
       <div class="meta">日足 もみ合い（200日線 0.92380） ・ 強弱 EUR 4位 / CHF 6位 ・ ATR 0.00069</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">0.92440</span> ・ レジライン <span class="px">0.92406</span>（反応4回）・ ブレイクまで 0.46 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span>ブレイク判定 <span class="px">0.92371</span> ・ サポライン <span class="px">0.92406</span>（反応4回）・ ブレイクまで 0.54 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c n">反対側から×</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">0.92440</span> ・ レジライン <span class="px">0.92406</span>（反応4回）・ ブレイクまで 0.46 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span>ブレイク判定 <span class="px">0.92371</span> ・ サポライン <span class="px">0.92406</span>（反応4回）・ ブレイクまで 0.54 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c n" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から×</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span></div>
       
     </div><div class="card">
       <div class="head"><span class="sym">GBP/CHF</span><span class="px">1.10802</span></div>
       <div class="meta">日足 上昇（200日線 1.07569） ・ 強弱 GBP 3位 / CHF 6位 ・ ATR 0.00090</div>
-      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">1.11002</span> ・ レジライン <span class="px">1.10957</span>（反応3回）・ ブレイクまで 2.22 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c y">跨ぎ0回○</span><span class="c y">日足トレンド○</span><span class="c n">通貨強弱×</span></div></span><b>サポート</b><span>ブレイク判定 <span class="px">1.10646</span> ・ サポライン <span class="px">1.10691</span>（反応4回）・ ブレイクまで 1.74 ATR<div class="chips"><span class="c y">反応3回以上○</span><span class="c y">反対側から○</span><span class="c n">跨ぎ0回×</span><span class="c n">日足トレンド×</span><span class="c n">通貨強弱×</span></div></span></div>
+      <div class="lv"><b>レジスタンス</b><span>ブレイク判定 <span class="px">1.11002</span> ・ レジライン <span class="px">1.10957</span>（反応3回）・ ブレイクまで 2.22 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c y" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回○</span><span class="c y" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド○</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span><b>サポート</b><span>ブレイク判定 <span class="px">1.10646</span> ・ サポライン <span class="px">1.10691</span>（反応4回）・ ブレイクまで 1.74 ATR<div class="chips"><span class="c y" title="そのラインで反転した回数（スイングハイ・ロー）が3回以上">反応3回以上○</span><span class="c y" title="ブレイク前、最後にラインの帯の外にあった終値が反対側（レジスタンスなら下）">反対側から○</span><span class="c n" title="過去120本で、終値がラインの帯を一度も跨いでいない">跨ぎ0回×</span><span class="c n" title="レジスタンスは日足が上昇、サポートは下降のときだけ">日足トレンド×</span><span class="c n" title="H1強弱のみ。買う通貨が7通貨中2位以内、売る通貨が6位以下">通貨強弱×</span></div></span></div>
       
-    </div></div><script>
+    </div>
+    <details class="guide" id="guide"><summary>表示の見方と各条件の意味</summary>
+    <h3>カードの見方</h3><dl>
+    <dt>レジスタンス</dt><dd>いまの価格より上で、いちばん近いレジライン。終値で上にブレイクすると買いの候補</dd>
+    <dt>サポート</dt><dd>いまの価格より下で、いちばん近いサポライン。終値で下にブレイクすると売りの候補</dd>
+    <dt>レジライン・サポライン</dt><dd>1時間足で何度も反転した価格帯の平均。反応2回のラインも参考として表示</dd>
+    <dt>ブレイク判定</dt><dd>ライン ± 0.5×ATR。足の終値がこの価格を越えたらブレイク</dd>
+    <dt>ブレイクまで</dt><dd>いまの終値からブレイク判定までの距離。ATR何本分か</dd>
+    <dt>抜ければシグナル</dt><dd>下の5条件がすべて○。ブレイク判定を終値で越えれば H1強弱 のエントリーシグナル</dd>
+    <dt>ポジション</dt><dd>仮想ポジション。損切り = 建値 ± 2×ATR、手仕舞い = 終値が直近10本の安値（売りは高値）を抜けたら</dd>
+    <dt>時刻</dt><dd>足は始まった時刻で呼ぶ。「21時の足」は 21:00〜22:00 の足で、22:00 に確定</dd>
+    </dl>
+    <h3>5つの条件</h3><dl>
+    <dt>反応3回以上</dt><dd>前後5本の中で一番高い高値・一番安い安値（スイングハイ・ロー）を、過去120本から集め、0.5×ATR 以内のものを同じラインとして数える。高値と安値は区別しない</dd>
+    <dt>反対側から</dt><dd>ブレイクする前、最後にラインの帯（ライン ± 0.5×ATR）の外にあった終値が反対側にあること。×はたいてい、もうそのラインを抜けたあと</dd>
+    <dt>跨ぎ0回</dt><dd>過去120本で、終値が帯の外から反対側の外へ一度も動いていないこと（帯の中の上下は数えない）。まだ一度も跨いでいない新しいラインだけを使う</dd>
+    <dt>日足トレンド</dt><dd>前の取引日の日足で判定。上昇 = 終値が200日線より上、かつ200日線が20日前より上。レジスタンスは上昇、サポートは下降のときだけ</dd>
+    <dt>通貨強弱</dt><dd>H1強弱 だけの条件。7通貨（USD EUR GBP JPY AUD NZD CHF）を1時間足120本の強さで順位付け。ペア BQ の買いは B が2位以内かつ Q が6位以下、売りは逆</dd>
+    </dl>
+    <h3>H1 と H1強弱</h3><dl>
+    <dt>H1</dt><dd>通貨強弱を見ない。上の4条件がそろえばシグナル</dd>
+    <dt>H1強弱</dt><dd>5条件すべて。通知メールの中心はこちら</dd>
+    </dl></details></div><script>
     function freshReload(){ location.replace(location.pathname + '?t=' + Date.now()); }
     setTimeout(freshReload, 600000);   // 10分ごとに自動で読み直す
   </script>
