@@ -52,7 +52,7 @@
     var p = r.pos && (r.pos.CS || r.pos.H1), side = p && p.entry ? p.side : 0;
     function part(name, x, target) {
       if (!x) return name + ' 更新中';
-      var t = name + ' <span class="px">' + fmt(x.v) + '</span>（' + x.ago + '本前' +
+      var t = name + ' <span class="px">' + fmt(x.v) + '</span>（' + (x.ago ? x.ago + '本前' : '最新の足') +
         (r.atr ? '・' + (Math.abs(x.v - r.close) / r.atr).toFixed(1) + ' ATR' : '') + '）';
       return target ? '<b>' + t + '</b>' : t;
     }
